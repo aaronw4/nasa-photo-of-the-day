@@ -14,13 +14,13 @@ return(
 <div className="dropdown">
     <button className="dropbtn text">{props.date}</button>
         <div className="dropdown-content">
-            <button>{oneDay}</button>
-            <button>{twoDays}</button>        
-            <button>{threeDays}</button>
-            <button>{fourDays}</button>
-            <button>{fiveDays}</button>
-            <button>{sixDays}</button>
-            <button>{sevenDays}</button>     
+            <button onClick={props.changeDate} value={oneDay}>{oneDay}</button>
+            <button onClick={props.changeDate} value={twoDays}>{twoDays}</button>        
+            <button onClick={props.changeDate} value={threeDays}>{threeDays}</button>
+            <button onClick={props.changeDate} value={fourDays}>{fourDays}</button>
+            <button onClick={props.changeDate} value={fiveDays}>{fiveDays}</button>
+            <button onClick={props.changeDate} value={sixDays}>{sixDays}</button>
+            <button onClick={props.changeDate} value={sevenDays}>{sevenDays}</button>     
         </div>
 </div>
 )}

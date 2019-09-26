@@ -1,4 +1,5 @@
 import React from "react";
+import {Date} from "./DateButton"
 
 export function NasaCard(props) {
 
@@ -6,7 +7,7 @@ export function NasaCard(props) {
         <div className='container'>
             <h1 className='title'>{props.title}</h1>
             <img src={props.image} alt={props.title}/>
-            <p className='text'>{props.date}</p>
+            <Date date={props.date}/>
             <p className='text'>{props.explanation}</p>
         </div>
     );

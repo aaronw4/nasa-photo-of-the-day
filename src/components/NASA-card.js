@@ -10,17 +10,27 @@ const Container = styled.div`
     padding: 25px 0;
 `;
 
+const Title = styled.h1`
+    color: white;
+`;
+
+const Text = styled.p`
+    color: white;
+    padding: 0 25px;
+    font-size: 20px;
+`;
+
 export function NasaCard(props) {
 
     return (
         <Container>
-            <h1 className='title'>{props.title}</h1>
+            <Title>{props.title}</Title>
             <img src={props.image} alt={props.title}/>
             <Date 
             date={props.date}
             changeDate={props.changeDate}
             />
-            <p className='text'>{props.explanation}</p>
+            <Text>{props.explanation}</Text>
         </Container>
     );
 }

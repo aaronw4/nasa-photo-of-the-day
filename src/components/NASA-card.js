@@ -1,10 +1,19 @@
 import React from "react";
-import {Date} from "./DateButton"
+import {Date} from "./DateButton";
+import styled from 'styled-components';
+
+const Container = styled.div`
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #23374d;
+    padding: 25px 0;
+`;
 
 export function NasaCard(props) {
 
     return (
-        <div className='container'>
+        <Container>
             <h1 className='title'>{props.title}</h1>
             <img src={props.image} alt={props.title}/>
             <Date 
@@ -12,6 +21,6 @@ export function NasaCard(props) {
             changeDate={props.changeDate}
             />
             <p className='text'>{props.explanation}</p>
-        </div>
+        </Container>
     );
 }

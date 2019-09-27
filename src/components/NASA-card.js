@@ -25,6 +25,7 @@ export function NasaCard(props) {
     return (
         <Container>
             <Title>{props.title}</Title>
+            <Text>{props.date}</Text>
             <img src={props.image} alt={props.title}/>
             <Date 
             date={props.date}
